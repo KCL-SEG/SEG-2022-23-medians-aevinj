@@ -13,8 +13,10 @@ while True:
 
 numbers.sort()
 
-if((len(numbers)%2)!=0):
-    print(numbers[math.ceil(len(numbers)/2)]-1)
+if (len(numbers)==1):
+    print(numbers[0])
+elif((len(numbers)%2)!=0):
+    print(numbers[math.ceil(len(numbers)/2)-1])
 else:
     lower = numbers[int((len(numbers)/2) - 1)]
     upper = numbers[int(len(numbers)/2)]
